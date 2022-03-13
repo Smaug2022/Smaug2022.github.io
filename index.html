@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/CSS/estilos.css" />
+  </head>
+  <body>
+    <h1>Cálculo del agua</h1>
+
+    <div class="contenedor">
+      <div class="datos card">
+        <div class="form">
+          <label class="margen" for="Litros">Litros</label
+          ><input id="litros" min="0" type="number" onfocus="this.value" ="0" />
+        </div>
+        <div class="form">
+          <label class="margen" for="Horas">Horas</label
+          ><input id="horas" min="0" type="number" onfocus="this.value" ="0" />
+        </div>
+        <div class="form">
+          <label class="margen" for="Dias">Dias</label
+          ><input id="dias" min="0" type="number" onfocus="this.value" ="0" />
+        </div>
+      </div>
+      <div class="instrucciones card">
+        <h2>Instrucciones de Uso</h2>
+        <p>
+          Los pasos para emplear correctamente la calculadora son los
+          siguientes:
+        </p>
+        <ol>
+          <li>
+            Llenar los espacios con la informacion requerida, de acuerdo a su
+            dia a dia.
+          </li>
+          <li>Usar el boton calcular para observar su resultado.</li>
+          <li>
+            En caso de haber un error en sus datos depues de calcular, usar el
+            boton reset.
+          </li>
+        </ol>
+        <p>En la bibliografia se argumenta el cálculo realizado</p>
+      </div>
+    </div>
+
+    <div class="calculo card">
+      <div class="botones">
+        <button id="operacion">Calcular</button
+        ><button id="reset">Resetear</button>
+      </div>
+      <p>El total de comsumo de agua es:</p>
+      <b><span id="resultado">0</span></b>
+      <p>litros por semana</p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+  <footer>
+    <br />
+    <h2>Bibliografia</h2>
+
+    <ul>
+      <li>
+        Comisión Nacional de Áreas Naturales Protegidas. (2019). ¿Sabes cuánta
+        agua consumes?. 12 de marzo del 2022, de Gobierno de México Sitio web:
+        https://www.gob.mx/conanp/articulos/sabes-cuanta-agua-consumes
+      </li>
+      <li>
+        Cristina Moral. (2020). ¿Sabes cuántos litros de agua necesita una
+        persona al día?. 12 de marzo del 2022, de Ferrovial Sitio web:
+        https://blog.ferrovial.com/es/2020/03/sabes-cuantos-litros-de-agua-necesita-una-persona-al-dia/
+      </li>
+      <li>
+        Samuel Huaquisto Cáceres y Isabel Griscelda Chambilla Flores. (2019).
+        ANÁLISIS DEL CONSUMO DE AGUA POTABLE EN EL CENTRO POBLADO DE SALCEDO,
+        PUNO. 12 de marzo del 2022, de Escuela Profesional de Ingeniería Civil,
+        Universidad Nacional del Altiplano Puno-Perú Unidad de Gestión Educativa
+        de Yunguyo Puno-Perú Sitio web:
+        http://www.scielo.org.bo/scielo.php?pid=S2518-44312019000100010&script=sci_arttext
+      </li>
+    </ul>
+  </footer>
+</html>
