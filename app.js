@@ -5,6 +5,20 @@ operacion.addEventListener("click", () => {
   var dias = document.getElementById("dias").value;
   var resultadoTexto = document.getElementById("resultado");
   var resultado = dias * litros * horas;
+  fetch("http://localhost:8080/registro", {
+    method: "POST",
+    body: JSON.stringify({
+      calculo: resultado,
+    }),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
+    .then((res) => res.json())
+    .then((resData) => {
+      alert(resData);
+    })
+    .catch((err) => alert(err));
   resultadoTexto.innerHTML = resultado;
 });
 
